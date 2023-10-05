@@ -15,7 +15,7 @@ class testFunction(unittest.TestCase):
 
     def test_addition_float_numbers(self):
         result = add_numbers(1.5, 2.5)
-        self.asserEqual(result, 4.0, places=2)
+        self.assertAlmostEquals(result, 4.0, places=2 )
 
 if __name__ == '__main__':
     unittest.main()
